@@ -1,0 +1,114 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<!-- Hero Section -->
+<section class="bg-light py-5 border-bottom">
+    <div class="container px-4 px-lg-5 my-3">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4 fw-bolder text-dark">DESAFÍO COSTA NEVADA</h1>
+                <p class="lead fw-normal text-muted mb-4">Un reto entre el mar y la montaña. Participa en los mejores eventos deportivos de Ciclismo y Trail Running en Santa Marta.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4">
+                    <a href="#eventos" class="btn btn-success btn-lg px-4 me-md-2 fw-bold">INSCRÍBETE YA</a>
+                    <a href="https://wa.me/573112523847" target="_blank" class="btn btn-outline-dark btn-lg px-4">
+                        <i class="bi bi-whatsapp me-2"></i>Contacto WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img class="img-fluid rounded-3 shadow-lg my-3" src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Ciclismo Costa Nevada" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Eventos Destacados -->
+<section id="eventos" class="py-5">
+    <div class="container px-4 px-lg-5 mt-3">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">PRÓXIMOS EVENTOS</h2>
+            <p class="text-muted">Elige tu reto y asegura tu cupo en línea</p>
+        </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-center">
+
+            <!-- Evento 1: Ciclismo -->
+            <div class="col mb-5">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="badge bg-primary position-absolute" style="top: 0.5rem; right: 0.5rem">Ciclismo</div>
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=600&q=80" alt="Desafío Costa Nevada" />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Desafío Costa Nevada</h5>
+                            <div class="text-muted mb-2">
+                                <i class="bi bi-calendar-event me-1"></i> Domingo, 6 de Septiembre
+                            </div>
+                            <p class="card-text text-start text-muted fs-6">
+                                <strong>Recorrido:</strong> 80 KM (Origen → Variante → Alterna)<br>
+                                <strong>Punto de encuentro:</strong> Café Origen (5:30 A.M.)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-success w-100 fw-bold" href="#">Inscribirme ($35.000)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evento 2: Trail Running -->
+            <div class="col mb-5">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="badge bg-warning text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Trail Running</div>
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=600&q=80" alt="Retto Sierra Nevada" />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Retto Sierra Nevada</h5>
+                            <div class="text-muted mb-2">
+                                <i class="bi bi-calendar-event me-1"></i> Finales de Noviembre
+                            </div>
+                            <p class="card-text text-start text-muted fs-6">
+                                <strong>Distancias:</strong> 21K y 42K<br>
+                                <strong>Lugar:</strong> Sierra Nevada de Santa Marta
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-success w-100 fw-bold" href="#">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evento 3: Gran Fondo -->
+            <div class="col mb-5">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="badge bg-primary position-absolute" style="top: 0.5rem; right: 0.5rem">Ciclismo</div>
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=600&q=80" alt="Gran Fondo Santa Marta" />
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Gran Fondo Santa Marta</h5>
+                            <div class="text-muted mb-2">
+                                <i class="bi bi-calendar-event me-1"></i> Primera semana de Febrero
+                            </div>
+                            <p class="card-text text-start text-muted fs-6">
+                                <strong>Distancia:</strong> 120 KM<br>
+                                <strong>Categorías:</strong> Open, Master A/B/C/D
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-success w-100 fw-bold" href="#">Inscribirme</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
